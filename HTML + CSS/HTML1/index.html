@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Basico</title>
+</head>
+<body>
+    <h1>HTML básico</h1> <!--titulo-->
+    <hr> <!--cria uma linha-->
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate quam maiores odio, assumenda deleniti nisi.</p>
+    <!-- p é para paragrafo  -->
+    <br>
+    <!-- br cria um espaço  -->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat inventore sequi in, reprehenderit error quisquam!</p>
+    <!-- tag A cria uma ancora, um link para outro site -->
+    <a href="https://ada.tech" target="_blank">Ada Tech</a>
+    <br>
+    <!-- target="_blank" faz ele abrir em outra aba, e o target self faz na msm  -->
+    <img src="img/Captura de tela 2023-06-10 011725.png" alt="Tô Online" width="100px">
+    <!-- img cria img, src é o diretorio e o alt é a descrição, width é o tamanho em pixels  -->
+    <br>
+    <!-- ul é lista não numerada e "li" são os itens -->
+    <ul>
+        <li>top</li>
+        <li>jungler</li>
+        <li>mid</li>
+    </ul>
+    <!-- ol é ordenada  -->
+    <ol>
+        <li>top</li>
+        <li>jungler</li>
+        <li>mid</li>
+    </ol>
+<hr>
+    <!-- tags de uso generico -->
+    <!-- div é um block, ocupa toda a linha q ela foi criada -->
+    <div>isso aqui é uma div</div>
+    <p>isso aqui é um<div> -isso aqui é uma div-</div> texto qualquer</p>
+    <hr>
+    <!-- span ocupa só aquele espaço q ele aparenta -->
+    <span>isso aqui é uma span</span>
+    <p>isso aqui é um<span> -isso aqui é uma span -</span> texto qualquer</p>
+<hr>
+<!-- tags para formatação de texto -->
+<p>isso é um <b>paragrafo</b></p> <!--negrito, o strong tbm serve, mas é para uma palavra com peso-->
+<!-- existem varios outros, tag S risca, mark marca,pre vai preformatar o texto,code transforma em codigo, sub é pequeno e sup é maior -->
+<p>isso é um <i>paragrafo</i></p> <!--italico, em é a msm coisa, mas é para enfase-->
+<br>
+
+<h1>Tabelas</h1>
+<table border="1">
+
+    <thead><!--isso aque é titulo da tabela e etc-->
+        <tr><!--linha-->
+            <th>Nome</th><!--coluna-->
+            <th>Idade</th>
+        </tr>
+
+    </thead>
+
+    <tbody><!--isso aqui é o corpo de uma tabela-->
+        <tr>
+            <td>Pessoa 1 </td>
+            <td>23 Anos</td>
+        </tr>
+        <tr>
+            <td>Pessoa 2</td>
+            <td>23 Anos</td>
+        </tr>
+    </tbody>
+
+</table>
+
+<br>
+
+<h1>Formularios</h1>
+<form><!-- cria um formulario -->
+    <input type="text" placeholder="Nome"> <!--literalmente um input de algo, pode se modificar o tipo-->
+    <br>
+    <br>
+    <input type="password" placeholder="Senha"><!-- placeholder é um texto pra mostrar o que se pede-->
+    <br>
+    <br>
+    <textarea name="message" id="message" cols="30" rows="10"></textarea> <!-- caixa de texto para colocar textos mais longos-->
+    <br>
+    <br>
+    <select name="tecnologias" id="tecnologias"><!-- ferramenta de seleção -->
+        <option value="html">HTML</option><!-- uma das opções-->
+        <option value="css">CSS</option>
+        <option value="js">JavaScript</option>
+        <br>
+        <br>
+    </select>
+</form>
+
+</body>
+</html>

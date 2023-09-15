@@ -1,0 +1,49 @@
+/* comentario se faz assim */
+
+.title{
+    font-size: 50px;
+    font-weight: 400;
+
+}
+#principais-estilos{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid yellow;
+    border-radius: 10px;
+}
+/* para chamar uma class é utilizado o ponto e para id é #*/
+#principais-estilos .paragrafo{
+    font-size: 22px;
+    line-height: 1;
+    color: yellow;
+    font-family: monospace;
+}
+#flexbox .container{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-around; /* alinhamento horizontal*/
+    
+}
+#flexbox .container .box{
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    border-radius: 10px;
+}
+section#grid-layout{
+    margin-top: 50px;
+}
+#grid-layout .container-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+#grid-layout .container-grid .caixa{
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    
+}
