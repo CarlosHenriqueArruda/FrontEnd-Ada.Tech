@@ -11,7 +11,7 @@ fetch("https://viacep.com.br/ws/53250490/json/")
 
 async function obterDadosDoCep() { //criação da função assincrona
   try { //"tente fazer isso"
-    const resposta = await fetch("https://viacep.com.br/ws/53250490/json/"); //cria uma variavel que busca a API e espera
+    const resposta = await fetch("https://viacep.com.br/ws/13035080/json/"); //cria uma variavel que busca a API e espera
     const dados = await resposta.json(); //transfere os dados da prmeira variavel para uma nova em JSON e espera
     console.log(dados); //printa na tela os dados transformados
   } catch (erro) { //"em caso de erro"
