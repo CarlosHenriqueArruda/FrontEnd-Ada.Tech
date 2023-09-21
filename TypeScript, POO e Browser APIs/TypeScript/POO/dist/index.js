@@ -14,9 +14,11 @@ class Pessoa {
     }
     //accessor: getter
     get cpf() {
+        //get é apenas um get normal, igual ao java
         return this._cpf;
     }
     set cpf(newcpf) {
+        //set é o set normal do
         if (newcpf.length !== 14) {
             //lancando um erro!
             throw new Error("tamanho do CPF incorreto!");
@@ -24,5 +26,15 @@ class Pessoa {
         this._cpf = newcpf;
     }
 }
-const carlos = new Pessoa("Carlos", 23, 1.81, "123.456.789-00");
-console.log(carlos.cpf);
+class Professor extends Pessoa {
+    constructor(nome, idade, altura, cpf, codigo) {
+        super(nome, idade, altura, cpf); //esse super no construtor é para passar os atributos da classe mãe para a filha
+        this.codigo = codigo; //esse codigo é exclusivo por isso é chamado
+    }
+    ensinar() {
+        console.log("Ensinando...🧠");
+    }
+}
+const professor = new Professor("professor", 23, 1.81, "123.123.456-00", "12"); //criando um novo professor
+console.log(professor.ensinar);
+//polimorfismo

@@ -42,9 +42,25 @@ class Pessoa implements iPessoa {
   }
 }
 
-class Professor {
-  nome: string;
-  idade: number;
-  altura: number;
+class Professor extends Pessoa {
   codigo: string;
+  constructor(
+    nome: string,
+    idade: number,
+    altura: number,
+    cpf: string,
+    codigo: string
+  ) {
+    super(nome, idade, altura, cpf); //esse super no construtor é para passar os atributos da classe mãe para a filha
+    this.codigo = codigo;//esse codigo é exclusivo por isso é chamado
+  }
+  ensinar(){//ele já herda todos os metodos da classe mãe
+    console.log("Ensinando...🧠")
+  }
 }
+
+const professor = new Professor("professor",23,1.81,"123.123.456-00","12") //criando um novo professor
+
+console.log(professor.ensinar)
+
+//polimorfismo
