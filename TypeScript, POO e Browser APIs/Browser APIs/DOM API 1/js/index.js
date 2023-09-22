@@ -45,3 +45,19 @@ console.clear();
 
 emailinput[0].value = "carlos@email.com"; //get retorna um array, tem que colocar a posição
 
+//Criando elementos na pagina HTML
+
+//inserindo uma tag nova
+const listaUl = document.querySelector("ul#lista"); //pegando a lista Ul e criando uma lista
+
+const novaTagLi = document.createElement("li"); //criando uma tag
+novaTagLi.textContent = "Segundo Item"; //adicionando conteudo a tag criada
+
+//listaUl.appendChild(novaTagLi); adicionando a tag criada a lista Ul de qualquer jeito
+
+const listaLis = document.querySelectorAll("ul>li"); //pegando todas as tags Li
+listaUl.insertBefore(novaTagLi, listaLis[1]); //adicionando a tag criada a lista em uma posição antes de algo
+
+//removendo
+
+listaUl.removeChild(novaTagLi) //removendo a tag inserida

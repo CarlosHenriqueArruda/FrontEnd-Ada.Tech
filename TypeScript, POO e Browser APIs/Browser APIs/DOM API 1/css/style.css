@@ -10,3 +10,7 @@ body{
 h1{
   margin: 1.5rem 1rem;
 }
+
+ul#lista {
+  padding: 0 2rem;
+}
