@@ -31,18 +31,31 @@ contador.style.width = "15px";
 //manilupando classes
 const themeButton = document.querySelector("#theme");
 
-let darkTheme = false;
+let darkTheme;
 
-themeButton.addEventListener("click", () => {
-  darkTheme = !darkTheme
+//definindo uma função que será executada ao carregar o conteudo da janela
+window.onload = () => {
+  const isDarkThemeStorage = localStorage.getItem("isDarkTheme");
+  darkTheme = isDarkThemeStorage === "true";
   const body = document.querySelector("body");
-  if (darkTheme){
+  if (darkTheme) {
     body.style.backgroundColor = "black";
     body.style.color = "white";
-  }
-  else{
+  } else {
     body.style.backgroundColor = "white";
     body.style.color = "black";
   }
+};
 
+themeButton.addEventListener("click", () => {
+  darkTheme = !darkTheme;
+  localStorage.setItem("isDarkTheme", darkTheme);
+  const body = document.querySelector("body");
+  if (darkTheme) {
+    body.style.backgroundColor = "black";
+    body.style.color = "white";
+  } else {
+    body.style.backgroundColor = "white";
+    body.style.color = "black";
+  }
 });
