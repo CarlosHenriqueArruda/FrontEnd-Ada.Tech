@@ -1,0 +1,64 @@
+* {
+  /*resetando CSS*/
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #222; /*cor de fundo*/
+  color: white; /* cor do texto*/
+  display: flex;
+  justify-content: center; /*centralizando*/
+  align-items: center; /*centralizando*/
+  height: 100vh; /*centralizando*/
+}
+main {
+  padding: 2rem; /*inutil*/
+  max-width: 800px; /*largura maxima*/
+  background-color: #333; /*cor*/
+  border-radius: 10px; /*borda*/
+}
+main > h1 {
+  /*titulo*/
+  font-size: 3rem; /*tamanho da fonte do titulo*/
+  margin-bottom: 1rem; /*espaco de baixo do titulo*/
+}
+main #search-form form {
+  /*deixando a barra e o botão lado a lado*/
+  width: 100%;
+  gap: 0.5rem; /*espaco entre input e botao*/
+  display: flex;
+  margin-bottom: 1rem; /* margem em baixo*/
+}
+main #search-form input {
+  /*barra de pesquisa estilo*/
+  flex: 1;
+  height: 25px;
+  border-radius: 5px;
+  border: none;
+  padding: 0 10px; /*espaco dentro da barra de pesquisa*/
+}
+main #search-form button {
+  /* botão pesquisar estilo*/
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 0rem 1rem;
+  height: 25px;
+  border-radius: 5px;
+}
+main #tempo-info {
+  /* sessão dos dados que aparecerão*/
+  display: flex; /*lado a lado*/
+  align-items: center; /*centralizando*/
+  justify-content: space-between;/* espacamento*/
+}
+main #tempo-info .tempo-dados h2{/*classe das informações que aparecerão*/
+  font-size: 18px;
+  font-weight: 300;
+}
+main #tempo-info .tempo-dados span{
+  font-size: 3rem;
+  font-weight: bold;
+}
