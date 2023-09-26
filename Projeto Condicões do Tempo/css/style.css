@@ -4,9 +4,14 @@
   padding: 0;
   box-sizing: border-box;
 }
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Condensed:wght@300;400&family=Roboto:wght@100&display=swap');
 
 body {
-  background-color: #222; /*cor de fundo*/
+	background: #643a7a;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
   color: white; /* cor do texto*/
   display: flex;
   justify-content: center; /*centralizando*/
@@ -16,7 +21,7 @@ body {
 main {
   padding: 2rem; /*inutil*/
   max-width: 800px; /*largura maxima*/
-  background-color: #333; /*cor*/
+  background-color: #bb99cc; /*cor*/
   border-radius: 10px; /*borda*/
 }
 main > h1 {
@@ -41,7 +46,7 @@ main #search-form input {
 }
 main #search-form button {
   /* botão pesquisar estilo*/
-  background-color: green;
+  background-color: purple;
   color: white;
   border: none;
   padding: 0rem 1rem;
@@ -61,4 +66,16 @@ main #tempo-info .tempo-dados h2{/*classe das informações que aparecerão*/
 main #tempo-info .tempo-dados span{
   font-size: 3rem;
   font-weight: bold;
+}
+main #tempo-info .tempo-dados2{/*classe das informações que aparecerão*/
+  font-size: 10px;
+  font-weight: 300;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+main #tempo-info .tempo-dados #descricao{/*classe das informações que aparecerão*/
+  font-size: 10px;
+  font-weight: 300;
 }
