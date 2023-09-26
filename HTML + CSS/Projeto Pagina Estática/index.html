@@ -1,27 +1,24 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Condensed:wght@300;400&display=swap" rel="stylesheet">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
+    <title>Carlos Oliveira | Portfolio</title>
     <link rel="stylesheet" href="CSS/style.css" />
   </head>
   <body>
     <header>
       <nav id="nav-bar">
-        <a class="nav-brand" href="#">Carlos Henrique</a>
+        <a class="nav-brand" href="#">Carlos Oliveira</a>
         <ul class="nav-list">
             <li class="nav-item">
-                <a href="#">Works</a>
+                <a href="#posts">Projetos</a>
             </li>
             <li class="nav-item">
-                <a href="#">Blog</a>
+                <a href="#Linguagens">Habilidades</a>
             </li>
             <li class="nav-item">
-                <a href="#">Contacts</a>
+                <a href="#social">Contato</a>
             </li>
         </ul>
         <div class="hm-menu">
@@ -35,38 +32,79 @@
     <main>
         <section id="banner">
             <div class="banner-content">
-                <h1 class="banner-content-title">Hi, I am Carlos, Web Dev</h1>
-                <p class="banner-content-subtitle">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio minima doloremque, consequuntur quasi tempore nihil id voluptatem aperiam dolore soluta earum dicta et reprehenderit facere aliquam nesciunt ullam, ea deleniti?</p>
-                <button class="banner-content-button">Download Resume</button>
+                <h1 class="banner-content-title">Deixe-me me apresentar:</h1>
+                <p class="banner-content-subtitle"> Sou um estudante de Ciência da Computação e também desenvolvedor Full Stack JavaScript. Além disso, tenho conhecimentos sólidos em Python e Java. Meu portfólio te mostrará um pouco sobre meus conhecimentos e minha jornada no desenvolvimento de software e demonstra minha habilidade em criar soluções práticas e eficazes.</p>
+                <a class="banner-content-button" href="arquivos/Curriculo Carlos Henrique.pdf" download>Download Resume</a>
             </div>
             <img src="perfil.jpg" alt="Carlos Henrique" class="banner-img">
         </section>
 
-        <section id="posts"> <!--talvez os projetos-->
+        <section id="posts">
             <div class="posts-content">
                 <div class="posts-content-header">
-                    <h2 class="section-title">Recent posts</h2> <!--link dos projetos-->
-                    <a class="view-all-link" href="#">View All</a>
+                    <h2 class="section-title">Alguns Projetos</h2> <!--link dos projetos-->
+                    <a class="view-all-link" href="https://github.com/CarlosHenriqueArruda" target="_blank">View All</a>
             </div>
             <div class="posts-cards">
                 <div class="post-card">
-                    <h3>Projeto 1</h3>
+                    <h3>To-do List</h3>
+                    <a id="visitar" href="https://carloshenriquearruda.github.io/To-Do-List/" target="_blank">Visitar projeto</a>
                     <span>14/09/2023</span>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto eum praesentium magnam accusamus, adipisci dolores, iste earum recusandae reprehenderit consectetur neque. Quae alias eligendi in nobis veniam consectetur officiis aliquid?</p>
+                    <p>O projeto é um aplicativo Web simples projetado para ajudá-lo a organizar tarefas. O projeto foi criado com o objetivo de fornecer uma interface intuitiva para adicionar, gerenciar e marcar tarefas como concluídas. Foi desenvolvido em JavaScript e utiliza componentes funcionais para criar uma experiência interativa e amigável, trabalhando também com Armazenamento Local (Web Storage) das tarefas, tanto as tarefas ativas quanto as concluídas.</p>
                 </div>
                 <div class="post-card">
-                    <h3>Projeto 2</h3>
-                    <span>14/09/2023</span>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto eum praesentium magnam accusamus, adipisci dolores, iste earum recusandae reprehenderit consectetur neque. Quae alias eligendi in nobis veniam consectetur officiis aliquid?</p>
+                    <h3>Open Weather</h3>
+                    <a id="visitar" href="https://carloshenriquearruda.github.io/Open-Weather/" target="_blank">Visitar projeto</a>
+                    <span>25/09/2023</span>
+                    <p>É um aplicativo projetado para informar a clima, temperatura, humidade e até velocidade do vento em qualquer cidade do planeta, é intuitivo e funcional. Foi criado inicialmente usando TypeScript, mas finalizado com JavaScript, utiliza uma API de monitoramento de clima e uma API para definir a localização, meu primeiro projeto utilizando API's REST e arquivos JSON.</p>
                 </div>
             </div>
-
-
             </div>
             <br>
         </section>
+        <section class="barra">
+            <section id="Linguagens">
+                <h1>Aplicações</h1>
+                <img src="arquivos/icones/aplicacoes/java.png" alt="Java">
+                <img src="arquivos/icones/aplicacoes/python.png" alt="Python">
+                <img src="arquivos/icones/aplicacoes/js.png" alt="JavaScript">
+                <img src="arquivos/icones/aplicacoes/Ts.png" alt="TypeScript">
+                <img src="arquivos/icones/aplicacoes/html-5.png" alt="Html">
+                <img src="arquivos/icones/aplicacoes/css-3.png" alt="Css">
+            </section>
+            <section id="cloud">
+                <h1>Cloud Computing</h1>
+                <img src="arquivos/icones/cloud/aws.webp" alt="Aws">
+            </section>
+            <section id="devops">
+                <h1>DevOps</h1>
+                <img src="arquivos/icones/devops/Git.png" alt="Git">
+                <img src="arquivos/icones/devops/github.png" alt="GitHub">
+            </section>
+            <section id="ferramentas">
+                <h1>Ferramentas</h1>
+                <img src="arquivos/icones/ferramentas/vscode.png" alt="VsCode">
+                <img src="arquivos/icones/ferramentas/figma.png" alt="Figma">
+                <img src="arquivos/icones/ferramentas/PyCharm.png" alt="PyCharm">
+                <img src="arquivos/icones/ferramentas/eclipse.png" alt="Eclipse">
+            </section>
+        <br>
+        </section>
+    <div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+     </div>
     </main>
 
-    <footer></footer>
+    <footer>
+        <section id="social">
+            <h1>Social Medias</h1>
+            <a href="https://github.com/CarlosHenriqueArruda" target="_blank"><img src="arquivos/icones/devops/github.png" alt="GitHub"></a>
+            <a href="https://www.linkedin.com/in/carloshenriquech/" target="_blank"><img src="arquivos/icones/social/linkedin.png" alt="LinkedIn"></a>
+            <a href="mailto:carloshenriquearruda82@gmail.com" target="_blank"><img src="arquivos/icones/social/gmail.png" alt="Email"></a>
+            <h6>Fique a vontade para me seguir ou conectar!</h6>
+        </section>
+    </footer>
   </body>
 </html>
